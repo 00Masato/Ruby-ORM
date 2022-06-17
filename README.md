@@ -1,3 +1,3 @@
-# WIP
 # Ruby-ORM
-Object Relation Mapping created by Ruby.
+**WIP**
+This is Object Relation Mapping created by Ruby.
