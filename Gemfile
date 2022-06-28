@@ -11,4 +11,6 @@ end
 group :development do
   # rubocop
   gem 'rubocop', require: false
+  # debug
+  gem 'pry-byebug'
 end
