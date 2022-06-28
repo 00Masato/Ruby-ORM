@@ -4,6 +4,9 @@ source "https://rubygems.org"
 # mysql adapter
 gem 'mysql2'
 
+# for cli command
+gem 'thor'
+
 group :test do
   # for test
   gem 'rspec'

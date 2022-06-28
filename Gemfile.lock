@@ -44,6 +44,7 @@ GEM
     rubocop-ast (1.16.0)
       parser (>= 3.1.1.0)
     ruby-progressbar (1.11.0)
+    thor (1.2.1)
     unicode-display_width (2.1.0)
 
 PLATFORMS
@@ -54,6 +55,7 @@ DEPENDENCIES
   pry-byebug
   rspec
   rubocop
+  thor
 
 BUNDLED WITH
    2.3.9
