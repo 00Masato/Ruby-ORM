@@ -1,16 +1,15 @@
+require 'ruby_orm/result_set'
+
 module RubyORM
   class Base
-    def initialize
-      @client = Mysql2::Client.new(
-        :host => 'localhost',
-        :username => 'root',
-        :password => 'password',
-        :database => 'ruby_orm_sample'
-      )
+    def query(sql)
+      results = connection.query(sql)
+      ResultVal.new(results)
     end
 
-    def query(sql)
-      @client.query(sql)
+  private
+    def connection
+      RubyORM.connection
     end
   end
 end
