@@ -4,13 +4,12 @@ class User < RubyORM::Base
 end
 
 RSpec.describe 'Base' do
-
   let(:user) { User.new }
   describe '#query' do
-    it 'is return ResultVal' do
+    it 'returns ResultVal' do
       insert_sql = 'INSERT INTO users (id, name) VALUES (1, "John")'
-      result = user.query(insert_sql)
-      expect(result.class).to eq RubyORM::ResultVal
+      results = user.query(insert_sql)
+      expect(results.class).to eq RubyORM::ResultVal
     end
     it 'is correct' do
       insert_sql = 'INSERT INTO users (id, name) VALUES (1, "John")'
