@@ -4,7 +4,7 @@ source "https://rubygems.org"
 # mysql adapter
 gem 'mysql2'
 
-# for cli command
+# for RubyORM command
 gem 'thor'
 
 group :test do
