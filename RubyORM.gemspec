@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.name = "RubyORM"
   spec.version = RubyORM::VERSION
   spec.authors = ["Kato Masato"]
-  spec.email = ["masato.kato0604@gmail.com"]
+  spec.email = ["masatokato0000@gmail.com"]
 
   spec.summary = "TODO: Write a short summary, because RubyGems requires one."
   spec.description = "TODO: Write a longer description or delete this line."
