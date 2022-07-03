@@ -1,4 +1,4 @@
-require 'ruby_orm/result_set'
+require 'RubyORM/result_set'
 
 module RubyORM
   class Base

@@ -1,5 +1,8 @@
+# frozen_string_literal: true
+
+require_relative "RubyORM/version"
 require 'mysql2'
-require 'ruby_orm/base'
+require 'RubyORM/base'
 
 module RubyORM
   def self.connection=(connection)
@@ -10,3 +13,4 @@ module RubyORM
     @connection or raise 'Please define a connection'
   end
 end
+
