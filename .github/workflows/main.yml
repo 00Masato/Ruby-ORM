@@ -18,14 +18,13 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
+        uses: ruby/setup-ruby@359bebbc29cbe6c87da6bc9ea3bc930432750108
         with:
           ruby-version: '3.1'
           bundler-cache: true
 
-      - name: Bundler and gem install
-        run: |
-          bundle install
+      - name: Install dependencies
+        run: bundle install
 
       - name: Run rspec
         run: bundle exec rspec
