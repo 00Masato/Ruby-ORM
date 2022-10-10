@@ -1,4 +1,9 @@
-CREATE TABLE users (
+CREATE TABLE profiles (
   id   BIGINT  NOT NULL AUTO_INCREMENT PRIMARY KEY,
   name text    NOT NULL
 );
+CREATE TABLE books (
+  id   BIGINT  NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  name text    NOT NULL
+);
+

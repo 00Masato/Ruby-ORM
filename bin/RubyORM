@@ -2,5 +2,13 @@
 $LOAD_PATH.push(File.expand_path(File.join(File.dirname(__FILE__), "../lib")))
 
 require 'RubyORM/runner'
+require 'thor'
 
-RubyORM::Runner.start
+class Command < Thor
+  desc "generate", "an example task"
+  def generate
+    RubyORM::Runner.generate
+  end
+end
+
+Command.start
