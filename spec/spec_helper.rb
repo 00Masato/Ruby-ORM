@@ -4,8 +4,8 @@ require "RubyORM"
 
 RubyORM.connection = Mysql2::Client.new(
   host: 'localhost',
-  username: 'root',
-  password: 'password',
+  username: 'test',
+  password: 'test',
   database: 'ruby_orm_sample'
 )
 
