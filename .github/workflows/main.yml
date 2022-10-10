@@ -31,6 +31,8 @@ jobs:
       - name: Install dependencies
         run: bundle install
       - name: Setup Database
-        run: sudo systemctl start mysql
+        run: |
+          sudo systemctl enable mysql.service
+          sudo systemctl start mysql
       - name: Run tests
         run: bundle exec rspec
